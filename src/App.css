@@ -1,0 +1,148 @@
+.sparkly-app {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #ffe2f1 0%, #d6bbff 100%);
+  color: #85378a;
+  min-height: 100vh;
+  padding-bottom: 50px;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(90deg, #ffbae3 0%, #b6aaff 100%);
+  border-bottom: 4px solid #e7a6c2;
+  padding: 20px 0 10px 0;
+}
+header h1 {
+  font-size: 2.2em;
+  color: #e75480;
+  letter-spacing: 2px;
+}
+nav button {
+  margin: 0 8px;
+  padding: 8px 18px;
+  font-weight: bold;
+  border-radius: 22px;
+  background: #ffe2f1;
+  border: 2px solid #da62ae;
+  color: #a10645;
+  cursor: pointer;
+  transition: 0.2s all;
+}
+nav button:hover {
+  background: #d6bbff;
+  color: #fff;
+}
+main { max-width: 800px; margin: 0 auto; }
+
+.feed {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin: 30px 0;
+}
+.post-card {
+  background: #fff6fb;
+  border-radius: 22px;
+  box-shadow: 0 4px 20px #e1aae6a7;
+  overflow: hidden;
+  padding: 0 0 13px 0;
+}
+.post-img {
+  width: 100%;
+  max-height: 340px;
+  object-fit: cover;
+}
+.post-meta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 10px 18px;
+}
+.post-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 3px solid #ffbae3;
+}
+.post-caption {
+  margin-left: 10px;
+  color: #a34fc0;
+  font-size: 1em;
+}
+
+.profile-card {
+  background: #fff4fe;
+  border-radius: 20px;
+  box-shadow: 0 3px 16px #cca8e8b3;
+  padding: 32px 22px;
+  margin: 34px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profile-avatar {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  border: 5px solid #e892c1;
+  margin-bottom: 14px;
+}
+.social-info {
+  display: flex;
+  gap: 35px;
+  justify-content: center;
+  margin: 18px 0;
+}
+.social-info span:first-child {
+  display: block;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #ba68c8;
+}
+.follow-lists {
+  display: flex;
+  gap: 44px;
+  margin: 10px 0;
+  width: 100%;
+  justify-content: center;
+}
+.follow-lists ul { list-style: none; padding: 0; margin: 0; }
+.profile-posts {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+.profile-post-card {
+  width: 100px;
+  background: #ffe0fa;
+  border-radius: 12px;
+  margin-bottom: 7px;
+  box-shadow: 0 2px 6px #c594c1a7;
+}
+.profile-post-card img { width: 100%; border-radius: 8px; }
+.profile-post-card p { font-size: 0.92em; padding: 3px 6px; color: #c266a6; }
+
+.stories-modal {
+  position: fixed;
+  top: 48px; left: 0; right: 0; margin: 0 auto;
+  max-width: 420px; background: #fff; border-radius: 22px;
+  box-shadow: 0 7px 30px #dab8e2b2;
+  z-index: 40; padding: 24px; text-align: center;
+  display: flex; flex-direction: column; align-items: center;
+}
+.stories-modal img { width: 320px; max-width: 95%; border-radius: 14px; margin-bottom: 12px; }
+
+.journal-block {
+  background: #fffbe7;
+  padding: 20px 14px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px #ab6bb1a1;
+  margin: 25px 0;
+}
+
+@media (max-width: 600px) {
+  .profile-card, .feed { padding: 0 0px; }
+  .stories-modal img { width: 95vw; }
+}
